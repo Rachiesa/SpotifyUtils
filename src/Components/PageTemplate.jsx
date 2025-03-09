@@ -2,7 +2,7 @@
 import { usePathname } from "next/navigation"
 import About from "@/app/about/About";
 import Utils from "@/app/utils/Utils";
-import Song from "@/app/utils/.song/Song";
+import Song from "@/app/utils/song/Song";
 
 export default function PageTemplate() {
     let a = usePathname().toUpperCase().split("/").length - 1;

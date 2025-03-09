@@ -14,7 +14,7 @@ export default function PageTemplate() {
                 <div className="flex flex-col justify-start p-2 gap-2 w-2/4 h-2/4 bg-primary drop-shadow-xl text-tertiary">
                     {displaypath === "ABOUT" && <About />}
                     {displaypath === "UTILS" && <Utils />}
-                    {displaypath === ".SONG" && <Song />}
+                    {displaypath === "SONG" && <Song />}
                 </div>
             </div>
             <h1 className="fixed bottom-0 right-14 font-anton text-[200px] text-tertiary">{displaypath}</h1>

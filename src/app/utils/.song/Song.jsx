@@ -1,6 +1,6 @@
 
 
-export default function song() {
+export default function Song() {
     return (
         <main>
             <h1>RANDOM.SONG</h1>

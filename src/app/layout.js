@@ -23,11 +23,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${anton.variable} ${trispace.variable} antialiased`}
       >
-        <nav className="fixed top-0 right-0 text-xl">
-          <Nav></Nav>
-        </nav>
+        <div className="fixed top-0 right-0 text-xl  ">
+          <Nav />
+        </div>
         {children}
       </body>
-    </html>
+    </html >
   );
 }

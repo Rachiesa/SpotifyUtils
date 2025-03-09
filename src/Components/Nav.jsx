@@ -1,11 +1,12 @@
 'use client';
-
+import { usePathname } from "next/navigation"
 export default function Nav() {
+    let a = usePathname().toUpperCase().slice(1);
     return (
-        <div className="flex gap-5 justify-end text-tertiary font-anton">
-            <div onClick={() => { window.location.href = "/" }}>/HOME</div>
-            <div onClick={() => { window.location.href = "about" }}>/ABOUT</div>
-            <div onClick={() => { window.location.href = "utils" }}>/UTILS</div>
-        </div >
+        <nav className="flex gap-5 justify-end text-tertiary font-anton">
+            {a !== "" ? <a className="animate-none" href="/">/HOME</a> : <a className="animate-pulse">/HOME</a>}
+            {a !== "ABOUT" ? <a className="animate-none" href="/about">/ABOUT</a> : <a className="animate-pulse">/ABOUT</a>}
+            {a !== "UTILS" ? <a className="animate-none" href="/utils">/UTILS</a> : <a className="animate-pulse">/UTILS</a>}
+        </nav >
     )
 }

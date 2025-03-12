@@ -25,12 +25,12 @@ export default function Song() {
 
     return (
         <main className='flex flex-col h-full w-full items-center gap-2'>
-            {image === undefined || image === "" ? <Image src={SpotifyLogo} className='h-1/2 w-1/4 border-tertiary ' alt='SpotifyCover' /> : <img src={image} className='h-1/2 w-1/4 border-4 border-tertiary ' />}
+            {image === undefined || image === "" ? <Image src={SpotifyLogo} className='h-1/2 w-1/4 border-tertiary ' alt='SpotifyCover' /> : <img src={image} className='h-1/2 w-2/4 border-4 border-tertiary ' />}
             <h1 className='flex font-anton text-auto w-full justify-center'>{tracks?.toUpperCase()}</h1>
             <h3 className='font-trispace text-auto'>{album?.toUpperCase()}</h3>
             <h2 className='font-anton text-auto'>{artist?.toUpperCase()}</h2>
             {link && <a href={link} target='_blank' className='font-anton text-xl'>PLAY ON SPOTIFY</a>}
-            <button onClick={() => fetchData()} className='font-anton text-3xl bg-tertiary text-secondary p-2 fixed top-[35%] left-[-10%] animate-pulse'>Generate</button>
+            <button onClick={() => fetchData()} className='font-anton text-3xl bg-tertiary text-secondary p-2 fixed md:top-[35%] md:left-[-10%] top-[93%] left-0 animate-pulse'>Generate</button>
         </main>
     )
 }

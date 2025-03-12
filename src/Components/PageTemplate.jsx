@@ -14,7 +14,7 @@ export default function PageTemplate() {
         <>
             <h1 className="fixed top-10 md:left-1 text-8xl md:text-[200px] font-anton text-tertiary">{displaypath === "" ? "SPOTIFY" : displaypath}</h1>
             <div className="flex justify-center items-center bg-secondary w-screen h-screen">
-                <div className="flex flex-col justify-center items-center p-2 gap-2 w-2/4 h-2/4 bg-primary drop-shadow-xl text-tertiary">
+                <div className="flex flex-col justify-center items-center p-2 gap-2 w-full md:w-2/4 h-3/5 md:h-2/4 bg-primary drop-shadow-xl text-tertiary">
                     {displaypath === "" && <Image src={SpotifyLogo} alt="Spotify Logo" className="h-3/4 w-3/4 animate-pulse " />}
                     {displaypath === "ABOUT" && <About />}
                     {displaypath === "UTILS" && <Utils />}

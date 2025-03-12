@@ -1,7 +1,7 @@
 'use client';
 import { usePathname } from "next/navigation"
 export default function Nav() {
-    let a = usePathname().toUpperCase().slice(1);
+    let a = usePathname().toUpperCase().split("/")[1];
     return (
         <nav className="flex gap-5 justify-end text-tertiary font-anton">
             {a !== "" ? <a className="animate-none" href="/">/HOME</a> : <a className="animate-pulse">/HOME</a>}

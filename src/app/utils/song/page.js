@@ -1,6 +1,9 @@
-
 import PageTemplate from '@/Components/PageTemplate';
-export default function page() {
+export default async function page() {
+
+
+
+
     return (
         <main>
             <PageTemplate />

@@ -25,7 +25,7 @@ export default function Song() {
 
     return (
         <main className='flex flex-col h-full w-full items-center gap-2'>
-            {image === undefined || image === "" ? <Image src={SpotifyLogo} className='h-1/2 w-1/4 border-tertiary ' alt='SpotifyCover' /> : <img src={image} className='h-1/2 w-2/4 border-4 border-tertiary ' />}
+            {image === undefined || image === "" ? <Image src={SpotifyLogo} className='h-1/2 w-1/4 border-tertiary ' alt='SpotifyCover' /> : <img src={image} className='h-1/2 w-2/4 md:w-1/4 border-4 border-tertiary ' />}
             <h1 className='flex font-anton text-auto w-full justify-center'>{tracks?.toUpperCase()}</h1>
             <h3 className='font-trispace text-auto'>{album?.toUpperCase()}</h3>
             <h2 className='font-anton text-auto'>{artist?.toUpperCase()}</h2>

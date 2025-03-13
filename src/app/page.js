@@ -1,5 +1,4 @@
-import SpotifyLogo from "../../public/SpotifyLogo.svg"
-import Image from "next/image";
+
 import PageTemplate from "@/Components/PageTemplate";
 
 

@@ -1,6 +1,8 @@
 import { Anton, Trispace } from "next/font/google";
 import Nav from "@/Components/Nav";
 import "./globals.css";
+import Transiton from "@/Components/Transiton";
+
 
 const anton = Anton({
   weight: "400", variable: "--font-anton", subsets: ["latin"]
@@ -18,10 +20,11 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body
-        className={`${anton.variable} ${trispace.variable} antialiased`}
+        className={`${anton.variable} ${trispace.variable} antialiased `}
       >
         <div className="fixed top-0 right-0 text-xl z-10">
           <Nav />

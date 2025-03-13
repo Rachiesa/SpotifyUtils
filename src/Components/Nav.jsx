@@ -2,11 +2,10 @@
 import React from 'react'
 import { usePathname } from "next/navigation"
 import { gsap } from "gsap";
-import { useEffect } from "react";
+
 
 export default function Nav() {
     let a = usePathname().toUpperCase().split("/")[1];
-    const [path, setPath] = React.useState();
 
     // gsap animation 
     async function animHome() {

@@ -33,10 +33,10 @@ export default function Nav() {
 
     return (
         <nav className="flex gap-5 justify-end text-tertiary font-anton">
-            {a !== "" ? <a className="animate-none" onClick={animHome} >/HOME</a> : <a className="animate-pulse">/HOME</a>
+            {a !== "" ? <button className="animate-none" onClick={animHome} >/HOME</button> : <button className="animate-pulse">/HOME</button>
             }
-            {a !== "ABOUT" ? <a className="animate-none" onClick={animAbout} >/ABOUT</a> : <a className="animate-pulse">/ABOUT</a>}
-            {a !== "UTILS" ? <a className="animate-none" onClick={animUtils} >/UTILS</a> : <a className="animate-pulse">/UTILS</a>}
+            {a !== "ABOUT" ? <button className="animate-none" onClick={animAbout} >/ABOUT</button> : <button className="animate-pulse">/ABOUT</button>}
+            {a !== "UTILS" ? <button className="animate-none" onClick={animUtils} >/UTILS</button> : <button className="animate-pulse">/UTILS</button>}
         </nav >
     )
 }

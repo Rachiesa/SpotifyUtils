@@ -1,7 +1,7 @@
 import { Anton, Trispace } from "next/font/google";
 import Nav from "@/Components/Nav";
 import "./globals.css";
-import Transiton from "@/Components/Transiton";
+
 
 
 const anton = Anton({

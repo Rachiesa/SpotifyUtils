@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation"
 import About from "@/app/about/About";
 import Utils from "@/app/utils/Utils";
 import Song from "@/app/utils/song/Song";
+import Artist from "@/app/utils/artist/Artist";
 import SpotifyLogo from "../../public/SpotifyLogo.svg"
 import Image from "next/image";
 import { gsap } from "gsap";
@@ -38,6 +39,7 @@ export default function PageTemplate() {
                     {displaypath === "ABOUT" && <About />}
                     {displaypath === "UTILS" && <Utils />}
                     {displaypath === "SONG" && <Song />}
+                    {displaypath === "ARTIST" && <Artist />}
                 </div>
             </div>
             <h1 id="titlebot" className="fixed opacity-0 bottom-0 right-0 md:right-14 font-anton text-8xl md:text-[200px] text-tertiary">{displaypath === "" ? "UTILS" : displaypath}</h1>
